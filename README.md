@@ -2,29 +2,27 @@
 
 ## Quick Start
 
-Install the dependencies
+Install the dependencies and build the project
+
+### yarn
 
 ```yarn
 yarn install
+yarn build
 ```
+### npm
 
 ```npm
 npm install
-```
-
-Build the project
-
-```yarn
-yarn build
-```
-
-```npm
 npm run build
 ```
 
 Open [chrome extensions manager](chrome://extensions/)
+
 Toggle developer mode
+
 Click on Load Unpacked
+
 Navigate to the Gitlab Releases page
 
 ## Motivation
@@ -39,6 +37,6 @@ This is a project done in my free time to fix an issue that was bothering me a b
 
 This was created as a React App to be able to make this a quick and dirty win.
 
-## How to develop/build
+I've followed this great tutorial from [Juan Cruz Martinez](https://github.com/bajcmartinez)
 
-
+[Creating a Chrome extension with React and TypeScript](https://blog.logrocket.com/creating-chrome-extension-react-typescript/)
