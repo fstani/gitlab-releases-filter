@@ -1,25 +1,28 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+  "name": "Gitlab Release Filter",
+  "description": "Filter out release notes that are relevant to your tier of Gitlab install",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+      "default_popup": "index.html",
+      "default_title": "Open the popup"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+        "matches": ["https://about.gitlab.com/releases/*"],
+        "js": ["./static/js/content.js"]
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "icons": {
+      "16": "16.png",
+      "32": "32.png",
+      "64": "64.png",
+      "128": "128.png",
+      "256": "256.png",
+      "512": "512.png",
+      "1024": "1024.png"
+  }
 }

@@ -2,8 +2,10 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders extension', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const modeSelector = screen.getByLabelText(/instance mode:/i)
+  expect(modeSelector).toBeInTheDocument();
+  const tierSelector = screen.getByLabelText(/instance tier:/i)
+  expect(tierSelector).toBeInTheDocument();
 });
