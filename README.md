@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Gitlab Releases Filter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Quick Start
 
-## Available Scripts
+Install the dependencies
 
-In the project directory, you can run:
+```yarn
+yarn install
+```
 
-### `npm start`
+```npm
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Build the project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```yarn
+yarn build
+```
 
-### `npm test`
+```npm
+npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open [chrome extensions manager](chrome://extensions/)
+Toggle developer mode
+Click on Load Unpacked
+Navigate to the Gitlab Releases page
 
-### `npm run build`
+## Motivation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was started because there's no option to filter the relevant information to a particular Mode or Tier of gitlab instalation on the release pages, with this it's easier to read only the relevant features to your gitlab installation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Team
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is a project done in my free time to fix an issue that was bothering me a bit, if anyone wants to fork or contribute to this project you are welcome to do it.
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This was created as a React App to be able to make this a quick and dirty win.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to develop/build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
