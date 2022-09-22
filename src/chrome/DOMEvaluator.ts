@@ -1,4 +1,4 @@
-import { filterReleasePage, Modes, Tiers } from '../filter/GitlabReleaseFilter';
+import { filterReleasePage, Tiers, Licenses } from '../filter/GitlabReleaseFilter';
 import { FilterMessageResponse, FilterMessage, MessageType } from '../types';
 
 const messagesFromReactAppListener = (msg: FilterMessage, sender: chrome.runtime.MessageSender, sendResponse: (response: FilterMessageResponse | null) => void) => {
@@ -6,7 +6,7 @@ const messagesFromReactAppListener = (msg: FilterMessage, sender: chrome.runtime
 
   if (msg.type === MessageType.FILTER_DOM) {
     response = {
-      count: filterReleasePage({mode: msg.mode as Modes, tier: msg.tier as Tiers})
+      count: filterReleasePage({mode: msg.mode as Tiers, license: msg.tier as Licenses})
     };
   }
 
