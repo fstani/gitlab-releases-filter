@@ -1,4 +1,4 @@
-import { Modes, Tiers } from "../filter/GitlabReleaseFilter";
+import { Tiers, Licenses } from "../filter/GitlabReleaseFilter";
 
 export enum MessageType {
   FILTER_DOM = 'FILTER_DOM',
@@ -9,8 +9,8 @@ export interface Message {
 }
 
 export interface FilterMessage extends Message {
-  mode: Modes,
-  tier: Tiers
+  mode: Tiers,
+  tier: Licenses
 }
 
 export interface FilterMessageResponse {
